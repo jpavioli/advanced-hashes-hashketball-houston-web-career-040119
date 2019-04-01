@@ -125,6 +125,7 @@ def num_points_scored(player_input)
   game_hash.each do |a,b|
     b[:players].each do |c,d|
         if c == player_input
+          binding.pry
           player_points = d[:points]
         end
     end
